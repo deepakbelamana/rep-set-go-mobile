@@ -57,7 +57,7 @@ export default function Sidebar() {
         <Animated.View style={[styles.drawer, { transform: [{ translateX: slideAnim }] }]}>
           <SafeAreaView style={styles.content}>
             <Text style={styles.title}>Profile</Text>
-            <TouchableOpacity style={styles.button} onPress={() => { /* nav to profile */ }}>
+            <TouchableOpacity style={styles.button} onPress={() => { router.push('/(user)/profile') }}>
               <Text style={styles.btnText}>View Profile</Text>
             </TouchableOpacity>
             <TouchableOpacity style={[styles.button, styles.logout]} onPress={handleLogout}>

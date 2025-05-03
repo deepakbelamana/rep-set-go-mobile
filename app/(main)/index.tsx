@@ -60,7 +60,7 @@ export default function HomeScreen() {
         const saved = await res.json();
         setGroups(prev => [...prev, saved]);
         setNewName(''); setShowInput(false);
-        Toast.show({ type: 'success', text1: 'Group added' });
+        Toast.show({ type: 'success', text1: 'Group added'});
       } else {
         Toast.show({ type: 'error', text1: 'Add failed' });
       }

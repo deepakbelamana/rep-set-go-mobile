@@ -141,7 +141,7 @@ export default function SetScreen() {
         dropdownIconColor="#fff"
       >
         {availableDates.map(date => (
-          <Picker.Item key={date} label={date} value={date} color="#fff" />
+          <Picker.Item key={date} label={date} value={date} />
         ))}
       </Picker>
 
